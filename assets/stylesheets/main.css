@@ -76,14 +76,14 @@ main {
 }
 
 .music-head {
-	flex: 0 0 140px; /* Stay at 280px */
+	flex: 0 0 280px; /* Stay at 280px */
 	display: flex;
 	padding: 40px;
 	background-color: #4e4e4e;
 }
 
 .catty-music {
-	flex: 1 1 auto;
+	flex: 1 0 auto;
 	display: flex;
 	flex-direction: column;
 	font-weight: 300;
@@ -125,6 +125,7 @@ li {
 	display: flex; /* Paragraphs are displayed on one line */
 	padding: 0 20px;
 	min-height: 50px;
+	align-items: center;
 }
 
 li p {
@@ -151,12 +152,38 @@ aside {
 }
 
 aside i.fa {
-	font-size: 0.9 em; /* Icon font size */
+	font-size: 0.9em; /* Icon font size */
 }
 
 footer {
-	flex: 0 0 90px; /* Don't grow or shrink, stay at 90px height. */
+	flex: 0 0 50px; /* Don't grow or shrink, stay at 90px height. */
 	padding: 10px;
 	color: #fff;
-	background-color: rgba(61, 100, 158, .9);
+	background-color: #4e4e4e;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.current-song-summary {
+	display: flex;
+	flex-grow: 4;
+	align-items: center;
+}
+
+.footer-controls {
+	flex: 3 1 100;
+	display: flex;
+	flex-grow: 2;
+	justify-content: space-between;
+	padding-right: 30px;
+}
+
+#main-album-art {
+	height: 280px;
+}
+
+#footer-album-art {
+	height: 50px;
+	padding-right: 10px;
 }
